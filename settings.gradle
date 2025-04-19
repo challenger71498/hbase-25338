@@ -1,0 +1,3 @@
+rootProject.name = 'hbase-25338'
+include 'hbase-wrapper'
+

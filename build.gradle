@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.querypie'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'java.security.krb5.conf', '/Users/mason/kerberos-test/mason/kerberos/krb5.conf'
+    jvmArgs '--add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED'
+}

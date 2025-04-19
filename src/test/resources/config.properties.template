@@ -1,0 +1,13 @@
+java.security.krb5.conf=
+# sun.security.krb5.debug=true
+
+hadoop.security.authentication=
+user.kerberos.principal=
+user.keytab.file=
+
+hbase.zookeeper.quorum=
+hbase.zookeeper.property.clientPort=
+
+hbase.security.authentication=
+hbase.master.kerberos.principal=
+hbase.regionserver.kerberos.principal=
