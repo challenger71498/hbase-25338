@@ -16,6 +16,5 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    systemProperty 'java.security.krb5.conf', '/Users/mason/kerberos-test/mason/kerberos/krb5.conf'
     jvmArgs '--add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED'
 }
